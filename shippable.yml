@@ -14,7 +14,7 @@ integrations:
     - integrationName: "shipdeploy"
       type: docker
   notifications:
-    - integrationName: "triigerPipelinesDV"
+    - integrationName: "triggerPipelinesDV"
       type: webhook
       payload:
         - versionName=$BRANCH.$BUILD_NUMBER
