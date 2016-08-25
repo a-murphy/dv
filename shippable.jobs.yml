@@ -1,0 +1,15 @@
+jobs:
+  - name: pipelines-dv-manifest
+    type: manifest
+    steps:
+     - IN: pipelines-dv-image
+     - TASK: managed
+
+  - name: deploy-pipelines-dv
+    type: deploy
+    steps:
+      - IN: pipelines-dv-manifest
+      - IN: docker-options
+      - IN: ecs-cluster
+      - TASK: managed
+        deployMethod: upgrade
