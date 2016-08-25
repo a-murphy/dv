@@ -13,6 +13,3 @@ integrations:
   hub:
     - integrationName: "shipdeploy"
       type: docker
-      branches:
-        only:
-          - master
