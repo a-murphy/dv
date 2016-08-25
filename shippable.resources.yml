@@ -1,7 +1,7 @@
 resources:
   - name: pipelines-dv-image
     type: image
-      integration: shipdeploy
+    integration: shipdeploy
     pointer:
       sourceName: "amurphy/samplepipelinesdv"
       isPull: false
