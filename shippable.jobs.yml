@@ -9,6 +9,7 @@ jobs:
     type: deploy
     steps:
       - IN: pipelines-dv-manifest
+      - IN: docker-options
       - IN: ecs-cluster
       - TASK: managed
         deployMethod: upgrade
