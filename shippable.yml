@@ -18,6 +18,5 @@ integrations:
       type: webhook
       payload:
         - versionName=$BRANCH.$BUILD_NUMBER
-      on_start: always
       on_success: always
-      on_failure: never
+      on_failure: always
