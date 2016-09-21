@@ -6,7 +6,7 @@ resources:
       sourceName: "amurphy/samplepipelinesdv"
       isPull: false
     seed:
-      versionName: "latest"
+      versionName: "updated"
       
   - name: docker-options
     type: dockerOptions
