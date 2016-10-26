@@ -13,6 +13,7 @@ integrations:
   hub:
     - integrationName: "shipdeploy"
       type: docker
+    testing:
   notifications:
     - integrationName: "triggerPipelinesDV"
       type: webhook
